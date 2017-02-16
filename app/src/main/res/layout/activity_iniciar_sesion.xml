@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jassgroup.acceso.IniciarSesionActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  >
+
+        <include layout="@layout/toolbar" />
+
+        <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+            android:id="@+id/scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarStyle="outsideOverlay"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="#F9F9F9">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxtUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/txtUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_usuario"
+                        android:textSize="@dimen/tamano_caja_texto"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtUsuario"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:hint="@string/txt_usuario"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    app:met_baseColor="@color/color_primary_text"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tamano_caja_texto" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxtClave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxtUsuario"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp">
+
+                    <EditText
+                        android:id="@+id/txtClave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_clave"
+                        android:textSize="@dimen/tamano_caja_texto"
+                        android:inputType="textPassword"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtClave"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:hint="@string/txt_clave"
+                    android:layout_below="@+id/lytxtUsuario"
+                    app:met_baseColor="@color/color_primary_text"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tamano_caja_texto"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="8dp" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_olvido_clave"
+                    android:id="@+id/texto_olvido_clave"
+                    android:layout_below="@+id/lytxtClave"
+                    android:textColor="@color/color_secondary_text"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp" />
+
+                <!--<com.gc.materialdesign.views.ButtonRectangle
+                    android:id="@+id/btn_guardar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texto_olvido_clave"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/txt_iniciar_sesion" />-->
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_guardar"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/texto_olvido_clave"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/txt_iniciar_sesion"
+                    android:theme="@style/AppTheme.ButtonPrimary"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_no_eres_miembro"
+                    android:id="@+id/texto_no_eres_miembro"
+                    android:layout_below="@+id/btn_guardar"
+                    android:textColor="@color/color_secondary_text"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_registro_ahora"
+                    android:id="@+id/texto_registro_ahora"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:layout_alignTop="@+id/texto_no_eres_miembro"
+                    android:layout_toEndOf="@+id/texto_no_eres_miembro"
+                    android:layout_marginStart="8dp" />
+
+
+
+
+
+
+            </RelativeLayout>
+        </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

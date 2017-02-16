@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorPrimaryLigth">#FFCDD2</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="colorBlanco">#fff</color>
+
+    <color name="backgroundColor">#212121</color>
+
+    <color name="background_footer">#90000000</color>
+
+    <!-- start deprecated -->
+    <color name="body_text_1">#de000000</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="body_text_3">#60000000</color>
+    <color name="body_text_disabled">#44000000</color>
+
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+    <!-- end deprecated -->
+
+    <!--color de texto-->
+    <color name="color_primary_text">#212121</color>
+    <color name="color_secondary_text">#727272</color>
+    <color name="color_disabled_text">#9E9E9E</color>
+    <color name="color_icons">#212121</color>
+    <color name="color_divider">#B6B6B6</color>
+    <!--fin de color de texto-->
+
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "861663652905",
+    "firebase_url": "https://tucarta-b8209.firebaseio.com",
+    "project_id": "tucarta-b8209",
+    "storage_bucket": "tucarta-b8209.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861663652905:android:51f9162f2e605e95",
+        "android_client_info": {
+          "package_name": "com.jassgroup.tucarta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861663652905-4q3o9i3uko1m34j9p2u438lovgq8i4db.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6J9XX-mMabLWenu9QOAinqAqkzJapkq4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Titulo App -->
+    <string name="app_name">TuCarta</string>
+
+    <!-- cadenas pantalla signup -->
+    <string name="texto_signup_titulo">TuCarta</string>
+    <string name="texto_signup_cuerpo">Chimbote cuna del emprendimiento tecnologico, chimbote cuna del emprendimiento tecnologico</string>
+
+    <!-- cadenas pantallas intro screens -->
+    <string name="texto_titulo3">MAYOR AUDIENCIA</string>
+    <string name="text_slider3">Conoce todas las actividades de la EcoFeria.</string>
+    <string name="texto_titulo2">INNOVACION</string>
+    <string name="text_slider2">Nuevo Chimbote, ciudad digital.</string>
+    <string name="texto_titulo1">CHIMBOTE CIUDAD DIGITAL</string>
+    <string name="text_slider1">Chimbote cuna del emprendimiento tecnologico.</string>
+
+    <!-- cadenas de pantallas acceso/registro/reestablecer -->
+    <string name="boton_login">LOGIN</string>
+    <string name="boton_empezar">EMPEZAR</string>
+    <string name="texto_no_eres_miembro">No eres miembro?</string>
+    <string name="texto_registro_ahora">REGISTRATE AHORA</string>
+    <string name="texto_inscribirse_ahora">INSCRIBETE AHORA</string>
+    <string name="txt_nuevo">Nuevo en CheckInApp?</string>
+    <string name="txt_ya_tiene_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="txt_olvido_clave">¿Olvidaste tu contraseña?</string>
+    <string name="txt_iniciar_sesion">INICIAR SESION</string>
+    <string name="txt_registrar_cuenta">REGISTRAR CUENTA</string>
+    <string name="txt_nueva_cuenta">CREAR UNA NUEVA CUENTA</string>
+    <string name="txt_usuario">Correo</string>
+    <string name="txt_clave">Clave</string>
+    <string name="txt_renovarclave">REESTABLECER CLAVE CON CORREO</string>
+
+    <!-- cadenas de items drawer genericos -->
+    <string name="txt_drawer_home">Inicio</string>
+    <string name="txt_drawer_config">Configuracion</string>
+    <string name="txt_drawer_ayuda">Ayuda</string>
+    <string name="txt_drawer_perfil_config">Editar Perfil</string>
+    <string name="txt_drawer_perfil_cerrar_sesion">Cerrar Sesion</string>
+
+    <string name="txt_apellidos">Apellidos</string>
+    <string name="txt_nombres">Nombres</string>
+    <string name="txt_nombres_apellidos">Nombres y apellidos</string>
+    <string name="txt_nombre_usuario">Usuario</string>
+    <string name="txt_correo">Correo</string>
+    <string name="txt_telefono">Telefono</string>
+    <string name="txt_sexo">Sexo</string>
+    <string name="txt_masculino">Masculino</string>
+    <string name="txt_femenino">Femenino</string>
+    <string name="txt_fecha_nac">Fecha nac.</string>
+    <string name="txt_codigo_telefeno">Codigo</string>
+    <string name="txt_num_telefono">Telefono</string>
+
+    <!-- textos de iconos de toolbar -->
+    <string name="txt_menu_guardar">Guardar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

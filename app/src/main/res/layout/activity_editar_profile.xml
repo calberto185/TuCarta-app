@@ -1,0 +1,162 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" >
+
+        <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+            android:id="@+id/scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarStyle="outsideOverlay"
+                android:background="#F9F9F9">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxtApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:id="@+id/txtApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_apellidos"
+                        android:textSize="@dimen/tamano_caja_texto"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtApellidos"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:hint="@string/txt_apellidos"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="16dp"
+                    app:met_baseColor="@color/color_primary_text"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tamano_caja_texto"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxtNombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxtApellidos"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:id="@+id/txtNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_nombres"
+                        android:textSize="@dimen/tamano_caja_texto"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtNombres"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:hint="@string/txt_nombres"
+                    android:layout_below="@+id/txtApellidos"
+                    app:met_baseColor="@color/color_primary_text"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tamano_caja_texto"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxtNombres"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:id="@+id/txtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_correo"
+                        android:textSize="@dimen/tamano_caja_texto"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtCorreo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:hint="@string/txt_correo"
+                    android:layout_below="@+id/txtNombres"
+                    app:met_baseColor="@color/color_primary_text"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tamano_caja_texto"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:enabled="false"
+                    android:editable="true" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lytxtTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lytxtCorreo"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <EditText
+                        android:id="@+id/txtTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/txt_telefono"
+                        android:textSize="@dimen/tamano_caja_texto"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtTelefono"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:hint="@string/txt_telefono"
+                    android:layout_below="@+id/txtCorreo"
+                    app:met_baseColor="@color/color_primary_text"
+                    app:met_primaryColor="@color/colorPrimary"
+                    app:met_floatingLabel="highlight"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tamano_caja_texto"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />-->
+
+
+            </RelativeLayout>
+
+
+
+        </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    </RelativeLayout>
+</RelativeLayout>

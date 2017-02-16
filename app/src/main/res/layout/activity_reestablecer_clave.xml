@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#F9F9F9">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/lytxtUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/txtUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txt_usuario"
+                    android:textSize="@dimen/tamano_caja_texto"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtUsuario"
+                android:layout_width="fill_parent"
+                android:layout_height="72dp"
+                android:hint="@string/txt_usuario"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                app:met_baseColor="@color/color_primary_text"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                android:textStyle="bold"
+                android:textSize="@dimen/tamano_caja_texto" />-->
+
+
+            <!--<com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_renovarclave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtUsuario"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_renovarclave" />-->
+
+            <Button
+                android:id="@+id/btn_renovarclave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lytxtUsuario"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_renovarclave"
+                android:textSize="14sp"
+                android:theme="@style/AppTheme.ButtonPrimary"/>
+
+        </RelativeLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+</LinearLayout>
